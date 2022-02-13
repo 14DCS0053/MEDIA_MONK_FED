@@ -142,8 +142,10 @@ const stepTitles = [
     {name:'temporary sacrifices brings lasting results',position:'left'}
 ];
 const animationTimeInMs = 1000;
-const slider = new Slider(9,stepTitles,animationTimeInMs);
+window.onload = function () {
+ const slider = new Slider(9,stepTitles,animationTimeInMs);
+  // IF YOU WANT AUTO SLIDER JUST UNCOMMENT THESE BELOW CODES
+   // const autoSliderTime = 2000;
+  // slider.startAutoSilder(autoSliderTime); 
+}
 
-// IF YOU WANT AUTO SLIDER JUST UNCOMMENT THESE BELOW CODES
-// const autoSliderTime = 2000;
-// slider.startAutoSilder(autoSliderTime); 
