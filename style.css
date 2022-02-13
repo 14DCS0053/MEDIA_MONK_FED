@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    
+}
+a{
+    color: #fff;
+}
+html{
+   height: 100vh;
+   overflow-y: hidden;
+}
+ul{
+    padding-left: 0;
+    display: flex;
+    list-style: none;
+    justify-content: end;
+}
+.text-white{
+    color: #fff;
+}
+.main-container{
+    position: relative;
+}
+.slider-container{
+    overflow: hidden;
+}
+img.bg-image{
+    height: 100vh;
+}
+#image-container{
+    position: relative;
+    left: 0px;
+}
+.scroll-btn {
+    position:  absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.scroll-btn.left {
+    left: 20px;
+}
+
+.scroll-btn.right {
+    right: 20px;
+}
+.bottom-box{
+    position:  absolute;
+    bottom: 50px;
+    left: 50px;
+    display: flex;
+    align-items: center;
+    z-index: 44;
+}
+#step-title{
+    position:  absolute;
+    z-index: 5;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-decoration: underline;
+    max-width: 250px;
+    color: #fff;
+}
+#step-title.top{
+    top:30px;
+    left: 20px;
+}
+#step-title.left{
+    top: 50%;
+    transform: translateY(-50%);
+    left: 60px;
+}
+#step-title.right{
+    top: 50%;
+    transform: translateY(-50%);
+    right: 60px;
+}
+#step-btn-container {
+    border: 2px dotted #fff;
+}
+
+#step-btn-container > button {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    padding: 0 5px;
+    border-left: 2px dotted #fff;
+    min-width: 20px;
+}
+#step-btn-container > button:nth-last-child(2) {
+    border-right: 2px dotted #fff;
+}
+#step-btn-container > button:first-child {
+    border-left: none;
+}
+
+#step-counter {
+    margin-left: 20px;
+}
+.contact-area{
+    background-color: #000;
+    position: absolute;
+    z-index: 4;
+    height: 100vh;
+    top: 0;
+    text-align: right;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contact-area ul li{
+    margin-left: 20px;
+}
+.contact-area ul li i{
+    margin-right: 7px;
+}
+.contact-area >*{
+    text-align: right;
+}
+button.active{
+    background-color: #fff !important;
+    opacity: 1 !important;
+}
